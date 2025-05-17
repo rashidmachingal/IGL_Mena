@@ -299,6 +299,9 @@
 }
 
 @media screen and (max-width: 480px) {
+  .home-hero{
+    min-height: 35rem;
+  }
   .igl-navbar {
     padding-left: 1rem;
     padding-right: 1rem;
