@@ -1,0 +1,340 @@
+.home-hero {
+  min-height: 80vh;
+  background-image: linear-gradient(#0a1b2b78, #0a1b2bfa 70%, #0a1b2b), url("https://assets-global.website-files.com/5dd7315081d3e97c21e69c0f/5dd7bd0cb9c85ce0737e2572_hero_ship.jpg");
+  background-position: 0 0, 50% 0;
+  background-size: auto, cover;
+  position: relative;
+  overflow: hidden;
+}
+
+.page-hero{
+  background-image: linear-gradient(#0a1b2b78, #0a1b2bfa 70%, #0a1b2b), url("https://images.pexels.com/photos/1095814/pexels-photo-1095814.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2")!important;
+  min-height: 15rem!important;
+  padding-bottom: 5rem;
+}
+
+.igl-navbar{
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
+  padding-left: 10rem;
+  padding-right: 10rem;
+  padding-top: 1.8rem;
+  padding-bottom: 1.8rem;
+  border-bottom: 1px solid #ffffff14;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: transparent;
+  transition: all 300ms ease-in-out;
+}
+
+.igl-logo img{
+  width: 130px;
+  height: auto;
+}
+
+.igl-logo{
+  color: #fff;
+  font-size: 30px!important;
+  font-weight: 600;
+  font-family: Barlow, sans-serif!important;
+  text-decoration: none!important;
+}
+
+.igl-navbar-links{
+  display: flex;
+  gap: 2rem;
+  text-transform: uppercase;
+}
+
+.igl-navbar-links a{
+  color: #fff;
+  font-size: 0.9rem;
+  text-decoration: none;
+}
+
+.igl-navbar-links a:hover{
+  color: #ffb607;
+}
+
+.igl-hero-content{
+  margin-top: 8rem;
+  padding-left: 10rem;
+  padding-right: 10rem;
+  padding-top: 1.8rem;
+  padding-bottom: 1.8rem;
+}
+
+.igl-hero-subtitle{
+  color: #ffb607;
+  font-size: 14px;
+  text-transform: uppercase;
+}
+
+.igl-hero-title{
+  color: #fff;
+  font-size: 55px;
+  line-height: 1.05;
+  letter-spacing: -.5px;
+  font-family: Barlow, sans-serif;
+}
+
+.igl-hero-description{
+  color: #fff;
+  font-size: 18px;
+  font-family: Barlow, sans-serif;
+  font-weight: 400;
+  margin-top: 1rem;
+}
+
+.igl-hero-button{
+  background-color: #ffb607;
+  color: #000;
+  margin-top: 2rem;
+  width: 10rem;
+  height: 3rem;
+  border-radius: 500px;
+}
+
+.igl-hero-button:hover{
+  background-color: #e3a108;
+  color: #fff;
+}
+
+.mobile-menu-btn {
+  display: none;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0.5rem;
+}
+
+.mobile-menu-btn span {
+  display: block;
+  width: 25px;
+  height: 2px;
+  background-color: #fff;
+  margin: 5px 0;
+  transition: all 0.3s ease;
+}
+
+.mobile-menu {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #0a1b2b;
+  z-index: 1000;
+  padding: 2rem;
+  transform: translateX(-100%);
+  transition: transform 0.3s ease;
+}
+
+.mobile-menu.active {
+  transform: translateX(0);
+}
+
+.mobile-menu-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.mobile-menu-close {
+  background: none;
+  border: none;
+  color: #fff;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+.mobile-menu-links {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.mobile-menu-links a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+}
+
+.mobile-menu-links a:hover {
+  color: #ffb607;
+}
+
+.igl-contact-links {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    padding: 1.5rem;
+    background: #ffd65032;
+    box-shadow: 0 4px 30px #0000001a;
+    border-bottom: 1px solid #ffb607;
+    width: 100%;
+}
+
+.igl-contact-icon-wrap {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 0.5rem 1.5rem;
+    border-right: 1px solid #ffffff33;
+}
+
+.igl-contact-icon-wrap:last-child {
+    border-right: none;
+}
+
+.igl-contact-icon-wrap img {
+    width: 24px;
+    height: 24px;
+    object-fit: contain;
+}
+
+.igl-contact-info {
+    display: flex;
+    flex-direction: column;
+}
+
+.igl-contact-info h4 {
+    color: black;
+    font-size: 0.9rem;
+    font-weight: 500;
+    margin: 0;
+    font-family: 'Rubik', sans-serif;
+}
+
+.igl-contact-info a,
+.igl-contact-info p {
+    color: black;
+    font-size: 0.9rem;
+    margin: 0;
+    text-decoration: none;
+    font-family: 'Rubik', sans-serif;
+    transition: color 0.3s ease;
+    font-weight: 400;
+}
+
+.igl-contact-info a:hover {
+    color: #FFBE34;
+}
+
+@media screen and (max-width: 991px) {
+  .home-hero {
+    padding-top: 160px;
+  }
+
+  .igl-navbar {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+
+  .igl-hero-content {
+    margin-top: 4rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+
+  .igl-hero-title {
+    font-size: 42px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .igl-navbar {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+
+  .igl-logo img {
+    width: 100px;
+  }
+
+  .igl-navbar-links {
+    display: none; /* You might want to add a mobile menu button here */
+  }
+
+  .igl-hero-content {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    margin-top: 0rem;
+  }
+
+  .igl-hero-title {
+    font-size: 32px;
+  }
+
+  .igl-hero-description {
+    font-size: 16px;
+  }
+
+  .mobile-menu-btn {
+    display: block;
+  }
+
+  .mobile-menu {
+    display: block;
+  }
+
+  .mobile-menu-btn.active span:nth-child(1) {
+    transform: rotate(45deg) translate(5px, 5px);
+  }
+
+  .mobile-menu-btn.active span:nth-child(2) {
+    opacity: 0;
+  }
+
+  .mobile-menu-btn.active span:nth-child(3) {
+    transform: rotate(-45deg) translate(7px, -6px);
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .igl-navbar {
+    padding-left: 1rem;
+    padding-right: 1rem;
+    justify-content: flex-start;
+    gap: 1rem;
+  }
+
+  .igl-hero-content {
+    margin-top: 0rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  .igl-hero-title {
+    font-size: 28px;
+  }
+
+  .igl-hero-button {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+    .igl-contact-links {
+        flex-direction: column;
+        gap: 1rem;
+        width: 100%;
+    }
+
+    .igl-contact-icon-wrap {
+        border-right: none;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+        padding: 1rem 0;
+    }
+
+    .igl-contact-icon-wrap:last-child {
+        border-bottom: none;
+    }
+}
