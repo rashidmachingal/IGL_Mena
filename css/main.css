@@ -2097,7 +2097,7 @@ html {
     --title-color: #1c1f35;
     --content-color: #666c89;
     --secondary-color: #091242;
-    --primary-color: #ffbe34;
+    --primary-color: #2a85cb;
     --background-color: #f4f4f4;
   }
   
@@ -2423,7 +2423,7 @@ html {
   }
   
   .subtitle-border {
-    background-image: linear-gradient(to right, #ffb629, #ffda56 45%, #ffd7a6);
+    background-image: linear-gradient(to right, #2a89d3, #2a89d3 45%, #2a8ad38d);
     min-width: 4px;
     position: absolute;
     top: 0%;
@@ -2687,7 +2687,7 @@ html {
   }
   
   .icon-wrap {
-    background-image: linear-gradient(135deg, #ffb629, #ffda56 50%, #ffd7a6);
+    background-image: linear-gradient(to right, #2a89d3, #2a89d3 45%, #2a8ad38d);
     border-radius: 100%;
     justify-content: center;
     align-items: center;
@@ -3364,7 +3364,7 @@ html {
     grid-column-gap: 20px;
     grid-row-gap: 20px;
     background-color: var(--primary-color);
-    background-image: linear-gradient(225deg, #ffd7a6, #ffda56 40%, #ffb629 50%);
+    background-image: linear-gradient(225deg, #2a8ad342, #2a89d3 40%, #2a89d3 50%);
     align-items: center;
     max-width: 590px;
     margin-left: auto;
