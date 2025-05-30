@@ -1,6 +1,6 @@
 .home-hero {
   min-height: 80vh;
-  background-image: linear-gradient(#0a1b2b78, #0a1b2bfa 70%, #0a1b2b), url("https://assets-global.website-files.com/5dd7315081d3e97c21e69c0f/5dd7bd0cb9c85ce0737e2572_hero_ship.jpg");
+  background-image: linear-gradient(#0a1b2b78, #0a1b2bfa 70%, #0a1b2b), url("/images/bg.jpg");
   background-position: 0 0, 50% 0;
   background-size: auto, cover;
   position: relative;
