@@ -1,6 +1,6 @@
 .home-hero {
   min-height: 80vh;
-  background-image: linear-gradient(#0a1b2b78, #0a1b2bfa 70%, #0a1b2b), url("/images/bg.jpg");
+  background-image: linear-gradient(#0a1b2b78, #0a1b2bfa 70%, #0a1b2b), url("https://bluebellshipping.com/wp-content/uploads/2018/07/logistics-company-in-dubai-e1531614809750.jpg.webp");
   background-position: 0 0, 50% 0;
   background-size: auto, cover;
   position: relative;
@@ -21,18 +21,18 @@
   z-index: 100;
   padding-left: 10rem;
   padding-right: 10rem;
-  padding-top: 1rem;
-  padding-bottom: 1rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.7rem;
   border-bottom: 1px solid #ffffff14;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background: transparent;
+  background: #091242;
   transition: all 300ms ease-in-out;
 }
 
 .igl-logo img{
-  width: 120px;
+  width: 230px;
   height: auto;
   mix-blend-mode: inherit;
 }
@@ -62,25 +62,27 @@
 }
 
 .igl-hero-content{
-  margin-top: 8rem;
+  margin-top: 10rem;
   padding-left: 10rem;
   padding-right: 10rem;
   padding-top: 1.8rem;
-  padding-bottom: 1.8rem;
+  padding-bottom: 2rem;
 }
 
 .igl-hero-subtitle{
   color: white;
   font-size: 14px;
   text-transform: uppercase;
+  font-family: 'HandelGothic TL', sans-serif;
+  font-weight: 500;                                            
 }
 
 .igl-hero-title{
   color: #fff;
-  font-size: 55px;
+  font-size: 45px;
   line-height: 1.05;
   letter-spacing: -.5px;
-  font-family: Barlow, sans-serif;
+  font-family: 'HandelGothic TL', sans-serif;
 }
 
 .igl-hero-description{
@@ -229,6 +231,144 @@
     color: #2a85cb;
 }
 
+.social-links-sp{
+  margin-top: 1.5rem!important;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+/* Popup overlay */
+.popup-overlay {
+  display: none;
+  position: fixed;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  z-index: 999;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Popup box */
+.popup-overlay {
+  display: none;
+  position: fixed;
+  top: 0; left: 0;
+  width: 100vw; height: 100vh;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 1000;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.3s ease;
+}
+
+.popup-box {
+  background: #fff;
+  padding: 30px 25px;
+  border-radius: 10px;
+  width: 90%;
+  max-width: 720px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+  position: relative;
+  animation: slideUp 0.3s ease;
+}
+
+
+@keyframes slideUp {
+  from {
+    transform: translateY(40px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.popup-box h2 {
+  margin-top: 0;
+  margin-bottom: 20px;
+  font-size: 24px;
+  color: #333;
+}
+
+.popup-box input,
+.popup-box select,
+.popup-box textarea {
+  width: 100%;
+  padding: 10px 12px;
+  margin-bottom: 15px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  font-size: 15px;
+  box-sizing: border-box;
+}
+
+.popup-box textarea {
+  resize: vertical;
+}
+
+.popup-box button[type="submit"] {
+  padding: 12px;
+  width: 100%;
+  background-color: #091242b7;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.popup-box button[type="submit"]:hover {
+  background-color: #091242;
+}
+
+.close-btn {
+  position: absolute;
+  top: 12px;
+  right: 14px;
+  background: none;
+  border: none;
+  font-size: 22px;
+  color: #888;
+  cursor: pointer;
+}
+
+.form-group-qt{
+  display: flex;
+  align-items: center;
+  gap: 0.7rem;
+  width: 100%;
+}
+
+.form-group-qt div{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group-qt label{
+  font-size: 15px;
+  color: black;
+  font-weight: 500;
+}
+
+@media (max-width: 480px) {
+  .popup-box {
+    padding: 20px 15px;
+    border-radius: 12px;
+    height: 500px;
+    overflow-y: scroll;
+  }
+  .form-group-qt{
+    flex-direction: column;
+    gap: 0;
+  }
+  
+}
+
 @media screen and (max-width: 991px) {
   .home-hero {
     padding-top: 160px;
@@ -257,12 +397,12 @@
   .igl-navbar {
     padding-left: 1.5rem;
     padding-right: 1.5rem;
-    padding-bottom: 1rem;
-    padding-top: 1rem;
+    padding-bottom: 0.5rem;
+    padding-top: 0.5rem;
   }
 
   .igl-logo img {
-    width: 100px;
+    width: 230px;
   }
 
   .igl-navbar-links {
@@ -324,7 +464,7 @@
   }
 
   .igl-hero-title {
-    font-size: 28px;
+    font-size: 23px;
   }
 
   .igl-hero-button {
