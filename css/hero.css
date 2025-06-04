@@ -73,8 +73,11 @@
   color: white;
   font-size: 14px;
   text-transform: uppercase;
-  font-family: 'HandelGothic TL', sans-serif;
   font-weight: 500;                                            
+}
+
+.sp-font{
+  font-family: 'HandelGothic TL', sans-serif;
 }
 
 .igl-hero-title{
@@ -82,7 +85,6 @@
   font-size: 45px;
   line-height: 1.05;
   letter-spacing: -.5px;
-  font-family: 'HandelGothic TL', sans-serif;
 }
 
 .igl-hero-description{
