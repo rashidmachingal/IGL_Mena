@@ -2,6 +2,8 @@
   min-height: 90vh;
   position: relative;
   overflow: hidden;
+  display: flex;
+  align-items: center;
 }
 
 .grid-background {
@@ -113,7 +115,6 @@
 .igl-hero-content{
   position: relative;
   z-index: 2;
-  margin-top: 13rem;
   padding-left: 10rem;
   padding-right: 10rem;
   padding-top: 1.8rem;
@@ -411,8 +412,10 @@ mark::before {
 .popup-overlay {
   display: none;
   position: fixed;
-  top: 0; left: 0;
-  width: 100vw; height: 100vh;
+  top: 0; 
+  left: 0;
+  width: 100%; 
+  height: 100vh;
   background: rgba(0, 0, 0, 0.5);
   z-index: 1000;
   justify-content: center;
@@ -426,7 +429,7 @@ mark::before {
   border-radius: 10px;
   width: 90%;
   max-width: 720px;
-  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 8px 24px #00000033;
   position: relative;
   animation: slideUp 0.3s ease;
 }
@@ -1071,5 +1074,17 @@ mark::before {
 
   .howitworks-step__content {
     max-width: 280px;
+  }
+}
+
+@media (-webkit-device-pixel-ratio: 1) {
+  body {
+      zoom: 1.25;
+  }
+  .min-h-for-100{
+      min-height: 70vh !important;
+  }
+  .min-h-for-80{
+    height: 80vh!important;
   }
 }
