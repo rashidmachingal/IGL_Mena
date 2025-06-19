@@ -22,6 +22,15 @@
 //   });
 // });
 
+const interval = setInterval(() => {
+    const link = document.querySelector('a[href*="elfsight.com/whatsapp-chat-widget"]');
+    if (link) {
+        link.remove();
+        clearInterval(interval);
+    }
+}, 500);
+
+
 function openPopup() {
   document.getElementById('popup').style.display = 'flex';
 }
